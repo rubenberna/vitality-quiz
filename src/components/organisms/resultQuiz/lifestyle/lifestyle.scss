@@ -1,0 +1,86 @@
+@import '../../../../styles/variables.scss';
+
+.pane-header-avatar {
+  .card {
+    height: 40vh;
+    padding: 10rem 2rem;
+    border-radius: 18px;
+    color: $white;
+    background-size:     cover;                   
+    background-repeat:   no-repeat;
+    background-position: center center;
+    p {
+      width: 50%;
+    }
+  }
+  .lifestyle {
+    background-image: linear-gradient(-225deg, rgba(96, 56, 19, 0.5) 0%, rgba(178, 159, 148, 0.5) 50%), url('../../../../assets/img/dashboard/lifestyle_bkg.jpg');
+  }
+  .tekorten {
+     background-image: linear-gradient(-225deg, rgba(96, 56, 19, 0.5) 0%, rgba(178, 159, 148, 0.5) 50%), url('../../../../assets/img/dashboard/tekorten_bkg.jpg');
+  }
+  .winkelen {
+    background-image: url('../../../../assets/img/dashboard/winkelen_bkg.jpg');
+  }
+}
+
+.lifestyle-header-second {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px 70px 10px 70px;
+
+  .card-lifestyle {
+    display: flex;
+    padding: 2rem;
+    border-radius: 18px;
+    justify-content: space-between;
+    width: 366px;
+    cursor: pointer;
+    transition: 0.5s all;
+    &:hover {
+      background: goldenrod;
+    }
+
+    .content {
+      display: flex;
+    }
+
+    .paragraph-lifestyle {
+      padding-top: 20px;
+      margin-left: 20px;
+    }
+
+    .lifestyle-img {
+      width: 8vw;
+      padding: 9px;
+      svg {
+        cursor: pointer;
+      }
+    }
+    .lifestyle-img-winkel{
+      width: 6vw;
+    }
+
+    .iconorangeColor {
+      color: $growing;
+    }
+
+    .iconRedColor {
+      color: $red;
+    }
+
+    .iconGreenColor {
+      color: $green;
+    }
+
+    .material-icons {
+      position: absolute;
+      top: 56%;
+      left: 10%;
+    }
+
+    .lifestyle-shop-img {
+      width: 70px;
+    }
+  }
+}

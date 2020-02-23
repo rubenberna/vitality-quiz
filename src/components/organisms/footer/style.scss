@@ -1,0 +1,31 @@
+@import '../../../styles/variables.scss';
+
+.home {
+  .footer {
+    background-color: $sky;
+    height: 220px;
+
+    .footer_content {
+      margin: 0 90px;
+      padding-top: 28px;
+      color: $white;
+
+      .footer_copy {
+        text-align: center;
+      }
+
+      .footer_social {
+        text-align: right;
+      }
+
+      .ui.list>.item>.image:only-child,
+      .ui.list>.item>img.image {
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: $white;
+      }
+    }
+  }
+}

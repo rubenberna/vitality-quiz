@@ -1,0 +1,46 @@
+@import '../../../styles/variables.scss';
+
+li svg {
+  width: 15%;
+  float: left;
+}
+
+.item {
+  font-size: 20px !important;
+  svg {
+    .st0 {
+      fill: $white;
+    }
+  }
+  h4 {
+    margin: 0.52rem 0 0.912rem 0;
+  }
+}
+.lifestyle {
+  svg {
+    .st0 {
+      fill: $blue;
+    }
+  }
+}
+.winkelen {
+  svg {
+    .st0 {
+      fill: $purple;
+    }
+  }
+}
+.tekorten {
+  svg {
+    .st9 {
+      fill: $red;
+    }
+  }
+}
+.sidenav {
+  padding-top: 25px;
+}
+
+.selected-dashboard {
+  background: #f5f5f5 !important;
+}

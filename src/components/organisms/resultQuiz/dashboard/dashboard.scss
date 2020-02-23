@@ -1,0 +1,188 @@
+@import '../../../../styles/variables.scss';
+
+.dashboard {
+  // grid-area: main;
+
+  padding: 90px;
+  background: lightblue;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $white;
+    -webkit-column-break-inside: avoid;
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+  }
+
+  .card.card-first {
+    margin: 0;
+    transition: 0.5s all;
+    &:hover {
+      background: cornflowerblue;
+    }
+
+    .dashboard-chart-wrapper {
+      width: 208px;
+    }
+  }
+
+  .dashboard-header {
+    column-count: 1;
+    column-gap: 20px;
+    margin: 20px;
+    display: flex;
+    grid-area: header;
+    justify-content: space-between;
+
+    .winkel-btn-clr {
+      svg {
+        .st0 {
+          fill: $white;
+        }
+      }
+    }
+  }
+
+  .dashboard-header-second {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    .dashboard-card-second {
+      width: 65%;
+    }
+
+    .dashboard-card-first {
+      width: 28%;
+      padding: 10px 0 0 0;
+
+      .card {
+        padding: 10px 0px 0px 0px;
+      }
+
+      .overviewcard-icon {
+        display: flex;
+        justify-content: space-between;
+
+        .overviewcard-img {
+          width: 35%;
+
+          .products-images {
+            width: 82px;
+            height: 81px;
+          }
+        }
+
+        .overviewcard-content {
+          width: 13vw;
+        }
+      }
+
+      .overviewcard {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #d3d3;
+        width: 100%;
+      }
+      .result-shop-img {
+        svg {
+          .st0 {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .dashboard-cards {
+    .lifestyle-wrapper {
+      height: 150px;
+      transition: 0.5s all;
+      &:hover {
+        background: yellowgreen;
+      }
+    }
+    .card-lifestyle-img {
+      padding: 0px 20px;
+      width: 100px;
+
+      .material-icons {
+        position: absolute;
+        top: 65%;
+      }
+
+      .iconorangeColor {
+        color: orange;
+      }
+
+      .iconRedColor {
+        color: red;
+      }
+
+      .iconGreenColor {
+        color: green;
+      }
+
+      .card-lifestyle {
+        display: flex;
+      }
+    }
+
+    .card-lifestyle {
+      display: flex;
+    }
+
+    .card-first {
+      height: 349px;
+      width: 90%;
+    }
+
+    .card-parent {
+      display: flex;
+      justify-content: space-between;
+
+      .small {
+        width: 48%;
+        height: 178px;
+        transition: 0.5s all;
+      }
+      .meds:hover {
+        background: darkorange;
+      }
+      .bmi:hover {
+        background: tomato;
+      }
+    }
+  }
+}
+
+.icon-dashboard-img {
+  width: 12%;
+}
+.labels {
+  display: flex;
+}
+
+/* Non-mobile styles, 750px breakpoint */
+@media only screen and (min-width: 46.875em) {
+  /* Show the sidenav */
+}
+
+/* Medium screens breakpoint (1050px) */
+@media only screen and (min-width: 65.625em) {
+  /* Break out dashboard cards into two columns */
+
+  .dashboard-cards {
+    column-count: 2;
+    width: 100%;
+  }
+}

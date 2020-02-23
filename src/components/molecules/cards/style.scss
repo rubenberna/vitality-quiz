@@ -1,0 +1,21 @@
+@import '../../../styles/variables.scss';
+
+.medicines-invoice {
+  height: 100%;
+  .med {
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+    padding: 0 5px;
+    font-family: $typed;
+    color: $start;
+    .med-cancel {
+      cursor: pointer;
+      color: $start;
+      &:hover {
+        color: #c62828;
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.content-main {
+  display: flex;
+  justify-content: space-between;
+  .main {
+    width: 83%;
+  }
+}
+
+.sidenav {
+  width: 17%;
+  position: static !important;
+  height: 120vh;
+}

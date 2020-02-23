@@ -1,0 +1,18 @@
+.recharts-tooltip-label {
+  display: none !important;
+}
+
+
+
+.chartjs-render-monitor {
+  animation: chartjs-render-animation 0.001s;
+  width: 533px !important;
+  height: 265px !important;
+}
+.canvasjs-chart-credit{
+  display: none
+}
+canvas {
+  display: inline-block;
+  cursor: pointer !important;
+}

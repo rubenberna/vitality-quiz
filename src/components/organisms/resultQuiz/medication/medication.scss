@@ -1,0 +1,46 @@
+.medication-header-avatar {
+  .card {
+    height: 40vh;
+    padding: 10rem 2rem;
+    border-radius: 18px;
+    color: white;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    background-image: url('../../../../assets/img/dashboard/meds_bkg.jpg');
+  }
+
+
+}
+
+
+
+.medication-paragraph {
+  width: 80%;
+}
+
+.medication-shop-img {
+  width: 18%;
+}
+
+.medication-body-card {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    -webkit-column-break-inside: avoid;
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.08);
+    margin: 2.5rem 1rem 1rem 0;
+
+
+  }
+}

@@ -1,0 +1,104 @@
+@import '../../../../styles/variables.scss';
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding-left: 60px;
+
+  .pane-header-details {
+    width: 90%;
+    padding: 10rem 2rem;
+
+    .card {
+      width: 100%;
+      height: 50vh;
+      padding: 4rem 2rem;
+      border-radius: 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+
+  @media (max-width: 600px) {
+    margin: 1rem auto;
+    padding: 0 1rem;
+    flex-direction: column;
+  }
+
+  .flex-column {
+    width: calc(33.3% - 2rem);
+    margin: 0 0 3rem 0;
+    display: flex;
+
+    @media (max-width: 768px) {
+      width: calc(50% - 1rem);
+      margin: 0 0 2rem 0;
+
+      &:last-child {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      width: 100%;
+      margin: 0 0 1rem 0;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.23), 0 6px 6px rgba(0, 0, 0, 0.23);
+      border-radius: 20px;
+      position: relative;
+      width: 84%;
+      cursor: pointer;
+
+      .image-wrapper {
+        img {
+          max-width: 100%;
+          border-radius: 10px 10px 0 0;
+          display: block;
+        }
+      }
+
+      .card-content {
+        flex: 1;
+        padding: 1.5rem;
+        background: $white;
+        width: 338px;
+
+        h2 {
+          margin: 0 0 0.5rem 0;
+        }
+
+        p {
+          margin: 0;
+          line-height: 1.5;
+        }
+
+        svg {
+          position: absolute;
+          left: calc(91.3% - 2rem);
+          top: calc(55.3% - 2rem);
+        }
+      }
+
+      .permalink {
+        display: block;
+        background: $blue;
+        color: $white;
+        text-decoration: none;
+        padding: 0.5rem;
+        font-weight: 800;
+        border-radius: 0 0 10px 10px;
+
+      }
+    }
+  }
+}

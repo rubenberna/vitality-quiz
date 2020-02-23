@@ -1,0 +1,82 @@
+@import '../../../styles/variables.scss';
+
+.home {
+  position: relative;
+  .home-banner-one {
+    min-height: 75vh;
+    display: flex;
+    margin: 0 90px;
+    align-items: center;
+    justify-content: space-between;
+    .cta-home-banner-one {
+      display: flex;
+      flex-direction: column;
+      height: 65vh;
+      width: 40%;
+      padding: 20px;
+      align-items: baseline;
+      justify-content: flex-end;
+    }
+    .home-banner-one-img {
+      width: 75%;
+      position: absolute;
+      right: -21px;
+      z-index: -1;
+      top: -60px;
+    }
+  }
+
+  .home-banner-two {
+    margin: 25vh 90px 18vh 90px;
+    .cards-collection-home {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 120px;
+    }
+    .cta-home-banner-two {
+      width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .home-banner-three {
+    margin: 18vh 90px;
+    display: flex;
+    align-items: center;
+    .cta-home-banner-three {
+      width: 45%;
+    }
+    .chart-with-background {
+      position: relative;
+      display: flex;
+      width: 65%;
+      justify-content: flex-end;
+    }
+  }
+
+  .home-banner-four {
+    margin: 15vh 90px;
+    display: flex;
+    justify-content: space-between;
+    .home-banner-four-frame {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      .home-banner-four-frame-img {
+        border-radius: 19px;
+      }
+      .home-banner-four-frame-text {
+        background-image: linear-gradient(to bottom right, $light-sky, $sky);
+        color: $white;
+        padding: 20px 30px;
+        border-radius: 19px;
+      }
+    }
+    .cta-home-banner-four {
+      width: 40%;
+    }
+  }
+}

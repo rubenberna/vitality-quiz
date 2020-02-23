@@ -1,0 +1,28 @@
+.search-meds {
+  color: black !important;
+  min-width: 400px;
+  margin: 20px 0 40px 15px;
+  .css-1aya2g8 {
+    border-radius: 30px !important;
+  }
+}
+
+.select-meds {
+  &:focus {
+    background: green !important;
+  }
+}
+
+.select-meds__control--is-focused {
+  // background: red !important;
+  border-radius: 35px !important;
+  border: 0 !important;
+
+}
+
+.react-select__menu {
+  background: green !important;
+}
+.react-select__menu-list {
+  background: green !important;
+}

@@ -1,0 +1,47 @@
+@import '../../../styles/variables.scss';
+
+.quiz-results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  .results-title {
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .results-score {
+    width: 90%;
+    .results-table {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .results-table-finalScore {
+        width: 55%;
+        .result-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          svg {
+            width: 34px;
+          }
+          .healthy {
+            fill: green;
+          }
+          .almost-sick {
+            fill: orange;
+          }
+          .sick {
+            fill: $red;
+          }
+        }
+      }
+      .results-table-demo-meds {
+        width: 40%;
+      }
+    }
+  }
+}
